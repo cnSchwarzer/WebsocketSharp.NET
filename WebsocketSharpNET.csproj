@@ -1,0 +1,52 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <GenerateDocumentationFile>True</GenerateDocumentationFile>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>websocket-sharp\websocket-sharp\websocket-sharp.snk</AssemblyOriginatorKeyFile>
+    <Version>1.0.3.nightly</Version>
+    <PackageId>WebsocketSharp.NET</PackageId>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Authors>sta, k1ee</Authors>
+    <Description>A C# implementation of the WebSocket protocol client and server, porting to .NET 6, with latest code.</Description>
+    <Copyright>sta.blockhead</Copyright>
+    <Company />
+    <Product>websocket-sharp</Product>
+    <PackageLicenseFile>D:\Work\WebsocketSharpNET\websocket-sharp\LICENSE.txt</PackageLicenseFile>
+    <PackageRequireLicenseAcceptance>True</PackageRequireLicenseAcceptance>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="websocket-sharp\Example1\**" />
+    <Compile Remove="websocket-sharp\Example2\**" />
+    <Compile Remove="websocket-sharp\Example3\**" />
+    <Compile Remove="websocket-sharp\Example\**" />
+    <Compile Remove="websocket-sharp\websocket-sharp\doc\**" />
+    <EmbeddedResource Remove="websocket-sharp\Example1\**" />
+    <EmbeddedResource Remove="websocket-sharp\Example2\**" />
+    <EmbeddedResource Remove="websocket-sharp\Example3\**" />
+    <EmbeddedResource Remove="websocket-sharp\Example\**" />
+    <EmbeddedResource Remove="websocket-sharp\websocket-sharp\doc\**" />
+    <None Remove="websocket-sharp\Example1\**" />
+    <None Remove="websocket-sharp\Example2\**" />
+    <None Remove="websocket-sharp\Example3\**" />
+    <None Remove="websocket-sharp\Example\**" />
+    <None Remove="websocket-sharp\websocket-sharp\doc\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Remove="websocket-sharp\websocket-sharp\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="websocket-sharp\.gitignore" />
+    <None Remove="websocket-sharp\LICENSE.txt" />
+    <None Remove="websocket-sharp\README.md" />
+    <None Remove="websocket-sharp\websocket-sharp_icon.png" />
+    <None Remove="websocket-sharp\websocket-sharp_logo.png" />
+  </ItemGroup>
+ 
+</Project>
